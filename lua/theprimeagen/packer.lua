@@ -70,9 +70,25 @@ return require('packer').startup(function(use)
   }
 
   use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
+--   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
+  use {
+	"zbirenbaum/copilot.lua",
+	cmd = "Copilot",
+	event = "InsertEnter",
+	config = function()
+	require("copilot").setup({
+        	filetypes = {
+            		javascript = true,
+            		typescript = true,
+	            	rust = true,
+                    ["*"] = false
+    		}
+	})
+	end,
+  }
+
 
 end)
 
