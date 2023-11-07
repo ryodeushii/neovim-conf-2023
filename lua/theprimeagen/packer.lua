@@ -83,6 +83,7 @@ return require('packer').startup(function(use)
             		javascript = true,
             		typescript = true,
 	            	rust = true,
+                    go = true,
                     ["*"] = false
     		}
 	})
