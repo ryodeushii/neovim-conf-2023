@@ -8,6 +8,7 @@ lsp.ensure_installed({
     'gopls',
     'lua_ls',
     'ast_grep',
+    'eslint'
 })
 
 
