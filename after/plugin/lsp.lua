@@ -7,7 +7,7 @@ lsp.ensure_installed({
     'rust_analyzer',
     'gopls',
     'lua_ls',
-    'eslint'
+    --'eslint'
 })
 
 
