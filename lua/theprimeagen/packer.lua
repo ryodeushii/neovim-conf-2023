@@ -32,7 +32,14 @@ return require('packer').startup(function(use)
             }
         end
     })
-
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup({
+                default_file_explorer = false
+            })
+        end,
+    })
     use {
         'nvim-treesitter/nvim-treesitter',
         run = function()
@@ -50,6 +57,7 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
