@@ -108,4 +108,9 @@ return require('packer').startup(function(use)
             })
         end,
     }
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "leoluz/nvim-dap-go"} }
+
+
+
+
 end)
