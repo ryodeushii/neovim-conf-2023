@@ -24,5 +24,17 @@ For golang debug install
 go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
+For typescript/javascript
+
+install *js-debug-adapter* using mason
+
+!! attach works fine, file run is needed to recheck !!
+
+
+TS-node proper script to inspect:
+```
+NODE_OPTIONS="-r ts-node/register --no-warnings" node --inspect ./src/app.ts
+```
+
 
 
