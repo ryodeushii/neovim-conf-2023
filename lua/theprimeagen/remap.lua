@@ -48,3 +48,13 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+
+-- allow to copy to system clipboard
+-- set system clipboard
+vim.keymap.set('n','y','"+y')
+vim.keymap.set('n','yy','"+yy')
+vim.keymap.set('n','Y','"+Y')
+vim.keymap.set('x','y','"+y')
+vim.keymap.set('x','Y','"+Y')
+
