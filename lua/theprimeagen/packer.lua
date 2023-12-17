@@ -46,8 +46,9 @@ return require('packer').startup(function(use)
             local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
             ts_update()
         end, }
+    use "nvim-lua/plenary.nvim"
     use("nvim-treesitter/playground")
-    use("theprimeagen/harpoon")
+    use{"ThePrimeagen/harpoon", branch = "harpoon2", required = {{"nvim-lua/plenary.nvim"}}}
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
